@@ -72,3 +72,26 @@ L = ['Hello', 'World', 18, 'Apple', None]
 print [s.lower() for s in L if isinstance(s, str)]
 
 
+
+#**************生成器**********************
+#Python中，这种一边循环一边计算的机制，称为生成器（Generator）
+#生成器实现方式1
+g = (x * x for x in range(10))
+print g.next()
+for n in g:
+	print n
+
+#生成器实现方式2，执行到yield语句返回，当调用next时候再度进入函数
+def fab(max):
+	n, a, b = 0, 0, 1
+	while n < max:
+		yield b
+		a, b = b, a + b
+		n = n + 1
+
+for n in fab(6):
+	print n
+
+a, b = 3, 5
+a, b = b, a
+print a, b

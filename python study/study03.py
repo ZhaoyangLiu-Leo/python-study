@@ -17,7 +17,7 @@ print a(-5)
 def my_abs(num):
 	#pass 表示什么也不做，用以占位
 	#pass
-	#添加类型jianyan
+	#添加类型检验
 	if not isinstance(num, (int, float)):
 		raise TypeError('bad operand type')
 	if (num >= 0):
