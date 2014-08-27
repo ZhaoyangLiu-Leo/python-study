@@ -66,3 +66,5 @@ class User(Model):
 
 u = User(ID=12345, name='John', email='John@gmail.com', password='123')
 u.save()
+
+#ORM框架
