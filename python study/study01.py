@@ -26,7 +26,7 @@ b = a
 a = 'XYZ'
 print b
 
-#pythoy 字符和对应数字的转换
+#python 字符和对应数字的转换
 a = ord('A')
 b = chr(65)
 print a, b

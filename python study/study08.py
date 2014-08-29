@@ -14,6 +14,7 @@ class Student(object):
 def set_score(self, score):
 	self.score = score
 
+#给student类添加方法，因此第二个参数为None
 Student.set_score = MethodType(set_score, None, Student)
 s = Student('Mike')
 s.set_score(20)
